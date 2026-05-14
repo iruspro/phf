@@ -1,0 +1,3 @@
+(library
+ (name phf)
+ (public_name phf))
