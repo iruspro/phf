@@ -4,7 +4,7 @@ type answer = bool
 type hash_fn = { a : int; b : int; m : int }
 type t = { outer : hash_fn; inner : (hash_fn * elt option array) array }
 
-let p = 2305843009213693951
+let p = 1073741789
 let hash (h : hash_fn) (x : elt) : int = ((h.a * x) + h.b) mod p mod h.m
 
 exception Collision
